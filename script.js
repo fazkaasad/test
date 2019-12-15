@@ -1,24 +1,15 @@
-"use strict";
+for (let i = 1; i < 8; i++) {
+    if (i == 6) {
+        continue;
+    }
+    console.log(i);
+}
 
-let person = {
-    name: "John",
-    age: 25,
-    isMarried: true
-};
-
-//console.log(person["isMarried"]);
-//console.log(person.age);
-
-let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
-//console.log(arr[0]);
-
-//let answer = confirm("Question?");
-//console.log(typeof(answer));
-
-//let answer1 = +prompt("Are u 18?", "Yes");
-//console.log(typeof(answer1));
-
-//console.log("arr" + " - object");
-//console.log(4 + +" - object");
-//console.log(typeof(answer1));
-
+let i = 0;
+while(i < 8) {
+    i++;
+    if(i == 6) {
+        continue;
+    }
+   console.log(i);
+}

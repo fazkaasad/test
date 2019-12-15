@@ -1,3 +1,5 @@
+"use strict";
+
 let person = {
     name: "John",
     age: 25,
@@ -20,9 +22,3 @@ let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
 //console.log(4 + +" - object");
 //console.log(typeof(answer1));
 
-let incr = 10,
-    decr = 10;
-
-
-
-console.log(incr++ + "\n" + decr--);

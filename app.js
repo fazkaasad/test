@@ -16,14 +16,16 @@ while (!questionsFlag) {
     for (let i = 0; i < 2; i++) {
         let a = prompt("Enter current month's required expenses:", ''),
             b = prompt("How much will it cost:", '');
-
         if (typeof (a) != null && typeof (b) != null &&
             a != '' && b != '' && a.length < 50) {
-            console.log("success");
+            console.log("Circle's stage " + i + ": success");
             appData.expenses[a] = b;
             questionsFlag = true;
         } else {
-            console.log("failure");
+            console.log("Circle's stage " + i + ": failure");
+            questionsFlag = false;
+            appData.expenses = {};
+            break;
         }
     }
 }
